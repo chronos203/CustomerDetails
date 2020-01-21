@@ -3,14 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <title>Success</title>
+
+    <style>
+    .details{
+        font-family:    Arial, Helvetica, sans-serif;
+        font-size:      15px;
+    }
+    </style>
 </head>
 <body>
 
-<H2> Thank you for providing details. </H2>
+
 <BR>
-<H2> Entered details: </H2>
+<BR>
+<BR>
+<BR>
+<BR>
 
-{{ data }}
 
+<div class="details" align="center">
+    <H2> Thank you for providing details. </H2>
+    <BR>
+    <H2> Entered details: </H2>
+    <h2>
+    Name:   {{ data[0] }}
+    <BR>
+    Email:  {{ data[1] }}
+    <BR>
+    Phone Number:   {{ data[2] }}
+    <BR>
+    </h2>
+    <p><a href="/"> Back to Home Page </a></p>
+</div>
 </body>
+
+
 </html>

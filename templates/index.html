@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Bootstrap Example</title>
+    <title>Customer Details</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -14,7 +14,7 @@
 <div class="container panel panel-default" >
     <h2>Customer Details</h2>
     <BR>
-    <form class="form-horizontal" action="submit_details" method="post">
+    <form class="form-horizontal" action="submit_details" method="post" id = "upload_form">
         <div class="form-group">
             <label class="control-label col-sm-2" for="name">Name</label>
             <div class="col-xs-5">
@@ -42,5 +42,12 @@
     </form>
 </div>
 </body>
+
+<script>
+function init() {
+  document.getElementById("upload_form").reset();
+}
+window.onload = init;
+</script>
 </html>
 
